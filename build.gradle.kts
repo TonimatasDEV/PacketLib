@@ -38,7 +38,7 @@ tasks.withType<Javadoc> {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = rootProject.group.toString()
+            groupId = "io.github.tonimatasdev"
             artifactId = project.name
             version = project.version.toString()
 
