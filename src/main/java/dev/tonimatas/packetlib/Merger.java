@@ -5,7 +5,6 @@ import java.util.regex.Pattern;
 
 public class Merger {
     public static byte[] bytes = null;
-    public static byte[] discardedPayload = null;
     
     public static byte[] mergePayloadPacket(byte[] originalBytes) {
         Pattern pattern = Pattern.compile("packet\\\\d+fixer");
