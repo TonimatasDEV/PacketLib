@@ -1,7 +1,7 @@
 import java.net.URI
 
 plugins {
-    java
+    `java-library`
     `maven-publish`
     signing
 }
