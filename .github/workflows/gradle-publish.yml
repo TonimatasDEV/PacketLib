@@ -29,9 +29,10 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build
-        
+
+          
       - name: Publish to GitHub Packages
-        run: ./gradlew publish
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
+        run: ./gradlew publish
