@@ -22,7 +22,9 @@ public class Merger {
         }
         
         if (stringBytes.equalsIgnoreCase("finish")) {
-            return Merger.bytes;
+            byte[] resultBytes = Merger.bytes;
+            Merger.bytes = null;
+            return resultBytes;
         }
         
         return null;
