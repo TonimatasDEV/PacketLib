@@ -13,7 +13,7 @@ public class Splitter {
         byte[] packetFixerBytes = ("packet" + currentPart + "fixer").getBytes();
 
         List<byte[]> bytes = new ArrayList<>();
-        
+
         while (parts > 0) {
             byte[] partBytes = new byte[maxSize];
 
@@ -26,11 +26,12 @@ public class Splitter {
 
             System.arraycopy(packetFixerBytes, 0, resultBytes, 0, packetFixerBytes.length);
             System.arraycopy(partBytes, 0, resultBytes, packetFixerBytes.length, partBytes.length);
-            
+
             bytes.add(resultBytes);
             currentPart++;
             parts--;
         }
-        
-        return bytes;    }
+
+        return bytes;
+    }
 }
