@@ -7,7 +7,7 @@ public class Merger {
     public static byte[] bytes = null;
 
     public static byte[] mergePayloadPacket(byte[] originalBytes) {
-        Pattern pattern = Pattern.compile("packet\\\\d+fixer");
+        Pattern pattern = Pattern.compile("packet\\\\d+lib");
         String stringBytes = new String(originalBytes);
         Matcher matcher = pattern.matcher(stringBytes);
 

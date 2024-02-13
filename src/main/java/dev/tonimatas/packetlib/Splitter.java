@@ -10,7 +10,7 @@ public class Splitter {
         int currentPart = 0;
         int currentByte = 0;
 
-        byte[] packetFixerBytes = ("packet" + currentPart + "fixer").getBytes();
+        byte[] packetFixerBytes = ("packet" + currentPart + "lib").getBytes();
 
         List<byte[]> bytes = new ArrayList<>();
 
