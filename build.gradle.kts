@@ -44,7 +44,7 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/TonimatasDEV/PacketLib")
             credentials {
-                username = "TonimatasDEV"
+                username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
