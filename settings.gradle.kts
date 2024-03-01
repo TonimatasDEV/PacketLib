@@ -1,2 +1,2 @@
-rootProject.name = "PacketLib"
+rootProject.name = "packetlib"
 

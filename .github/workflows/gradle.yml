@@ -28,9 +28,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build  
 
-      - name: Get current project version
-        run: echo "::set-output name=project_version::$(grep '^projectVersion=' gradle.properties | cut -d'=' -f2)"
-
       - name: Publish with Gradle
         uses: gradle/gradle-build-action@v2.9.0
         with:
