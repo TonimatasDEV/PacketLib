@@ -6,6 +6,8 @@ plugins {
 apply(plugin = "maven-publish")
 apply(plugin = "signing")
 
+val projectVersion: String by extra
+
 java {
     toolchain { 
         languageVersion.set(JavaLanguageVersion.of(8))
@@ -16,7 +18,7 @@ java {
 }
 
 group = "dev.tonimatas.packetlib"
-version = "1.0.0"
+version = projectVersion
 
 repositories {
     mavenCentral()
