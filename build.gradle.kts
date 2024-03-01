@@ -17,8 +17,9 @@ java {
     withSourcesJar()
 }
 
-group = "dev.tonimatas.packetlib"
+group = "dev.tonimatas"
 version = projectVersion
+base.archivesName.set("packetlib")
 
 repositories {
     mavenCentral()
